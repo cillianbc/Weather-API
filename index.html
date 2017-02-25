@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Weather API</title>
+  <title>Weather API and Giphy Bonus</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="crossorigin="anonymous"></script>
   <!-- Latest compiled and minified CSS -->
@@ -14,11 +14,11 @@
 </head>
 <body>
   <div class="container-fluid">
-	<!-- <div class="row headerArea">
-		<div class="col-xs-8 col-md-8 col-md-offset-2 col-xs-offset 2">
-      <div class = "heading"><h1>Random Chuck Norris Joke Machine</h1></div>
+	<div class="row headerArea">
+		<div class="col-xs-6 col-md-6 col-md-offset-2 col-xs-offset 2">
+      <div class = "heading"><h1>Weather API and Giphy Bonus</h1></div>
 		</div>
-	</div> -->
+	</div>
 	<div class="row contentArea">
 		  <div class="col-xs-6 col-md-6 col-md-offset-2 col-xs-offset 2">
         <div id="imageholder">
@@ -27,9 +27,14 @@
         </div>
 		  </div>
       <div class="col-xs-2 col-md-2">
+        <div id="temperatureButton">
+          <button class="converter-cel btn btn-primary" onclick="toCel()">Celcius</button>
+          <button class="converter-faren btn btn-success" onclick="toFaren()">Farenheit</button>
+        </div>
         <div id="temperature">
         </div>
         <div id="location">
+
         </div>
       </div>
 	</div>
