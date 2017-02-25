@@ -40,7 +40,7 @@ function convertToFaren(celc){
 // ---- API Fetches ----- //
 
 function giphy(){
-  fetch("http://api.giphy.com/v1/gifs/trending?api_key=dc6zaTOxFJmzC")
+  fetch("https://api.giphy.com/v1/gifs/trending?api_key=dc6zaTOxFJmzC")
   .then((response)=>{
     return response.json()
   }).then((callback)=>{
