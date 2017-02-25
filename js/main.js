@@ -65,7 +65,6 @@ function getWeather(){
     .then((response)=>{
       return response.json()
     }).then((callback)=>{
-       console.log(callback)
       resetState()
       reverseGeo(currentLocation[0],currentLocation[1])
       state.forecast = callback.currently.summary
